@@ -17,6 +17,8 @@ RUN npm install --only-production
 
 COPY . .
 
+EXPOSE 4000
+
 ENTRYPOINT [ "node" ]
 
 CMD [ "src/index.js" ]
