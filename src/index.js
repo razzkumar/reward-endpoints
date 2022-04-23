@@ -32,7 +32,7 @@ app.get("/users/:id/rewards", async (req, res) => {
     // Get rewards for user id
     const rewards = await getRewards(id, date);
 
-    return res.status(200).send(rewards);
+    return res.status(200).send({ data: rewards });
   } catch (error) {
     res.status(500).send(error.message);
   }
@@ -47,7 +47,7 @@ app.patch("/users/:id/rewards/:at/redeem", async (req, res) => {
   const redeem = await redeemRewards(id, new Date(at));
 
   if (redeem) {
-    return res.status(200).send(redeem);
+    return res.status(200).send({ data: redeem });
   }
 
   return res
