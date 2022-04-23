@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dev
+    volumes:
+      - .:/app
+    command: ["npm","run","dev"]
+    ports:
+      - "4000:4000"
+    networks:
+      - backend_net
+networks:
+  backend_net:
