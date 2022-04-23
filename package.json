@@ -1,0 +1,35 @@
+{
+  "name": "reward-endpoints",
+  "version": "1.0.0",
+  "description": "Nodejs rewards api endpoints",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "TZ=UTC node src/index.js",
+    "dev": "TZ=UTC nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/razzkumar/reward-endpoints.git"
+  },
+  "keywords": [
+    "api",
+    "rewards"
+  ],
+  "author": "razzkumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/razzkumar/reward-endpoints/issues"
+  },
+  "homepage": "https://github.com/razzkumar/reward-endpoints#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "volta": {
+    "node": "18.0.0",
+    "npm": "8.7.0"
+  }
+}
